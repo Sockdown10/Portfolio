@@ -1,0 +1,18 @@
+<form action="mailto:tu_correo_electronico@ejemplo.com" method="post" enctype="text/plain">
+  <label for="name">Nombre:</label>
+  <input type="text" id="name" name="name" required>
+  <br>
+  <label for="email">Correo electrónico:</label>
+  <input type="email" id="email" name="email" required>
+  <br>
+  <label for="message">Mensaje:</label>
+  <br>
+  <textarea id="message" name="message" rows="5" cols="40" required></textarea>
+  <br>
+  <input type="submit" value="Enviar">
+</form>
+
+<!--Formulario para enviarme un mensaje directamente a mi correo-->
+
+<button onclick="location.href='mailto:tu_correo_electronico@ejemplo.com'">Enviar mensaje</button>
+<!--Este boton se inserta en el portfolio para que te redireccione al formulario de contacto-->
