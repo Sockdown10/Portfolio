@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Pedro José</title>
+    
+    <script src="funciones.js"></script>
+    
+    <link rel="stylesheet" href="estilos.css">
+    
+    
+</head>
+
+<body>
+    
+    <div id="calculadora">
+        <div id="pantalla">
+            <h2>CASIO</h2>
+            <div class="pantalla">
+                <input type="text" id="display" value=''  readonly>
+                <input type="text" name="" id="display2" value='' readonly>
+            </div>
+        </div>
+
+        <table>
+            <tr>
+                <td><input type="button" id='siete' value="7" onclick="darValor('7')"></td>
+                <td><input type="button" id="ocho" value="8" onclick="darValor('8')"></td>
+                <td><input type="button" id="nueve" value="9" onclick="darValor('9')"></td>
+                <td><input type="button" id="division" value="/" onclick="darValor('/')"></td>
+                <td><input type="button" id="multiplicacion" value="*" onclick="darValor('*')"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" id="cuatro" value="4" onclick="darValor('4')"></td>
+                <td><input type="button" id="cinco" value="5" onclick="darValor('5')"></td>
+                <td><input type="button" id="seis" value="6" onclick="darValor('6')"></td>
+                <td><input type="button" id="suma" value="+" onclick="darValor('+')"></td>
+                <td><input type="button" id="resta" value="-" onclick="darValor('-')"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" id="uno" value="1" onclick="darValor('1')"></td>
+                <td><input type="button" id="dos" value="2" onclick="darValor('2')"></td>
+                <td><input type="button" id="tres" value="3" onclick="darValor('3')"></td>
+                <td><input type="button" id="potencia" value="^" onclick="darValor('**')"></td>
+                <td><input type="button" id="raiz" value="&#8730;" onclick="darValor('**(1/2)')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="AC" style="background-color: orange;" onclick="reset()"></td>
+                <td><input type="button" id="" value="0" onclick="darValor('0')"></td>
+                <td><input type="button" value="%" onclick="darValor('%')"></td>
+                <td><input type="button" style="background-color: aqua;" onclick="calcular()" value="="></td>
+                <td><input type="button" value="." onclick="darValor('.')"></td>
+
+
+            </tr>
+
+            <tr>
+                <td><input type="button" value="(" onclick="darValor('(')"></td>
+                <td><input type="button" value=")" onclick="darValor(')')"></td>
+            </tr>
+
+
+        </table>
+    </div>
+</body>
+
+</html>
